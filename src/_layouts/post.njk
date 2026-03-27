@@ -1,0 +1,42 @@
+---
+layout: base.njk
+---
+<div class="article-hero">
+  <div class="container">
+    <div class="card-tag">{{ category or "Guide" }}</div>
+    <h1>{{ title }}</h1>
+    <div class="meta">{{ date | dateformat }} · {{ readtime or "8" }} min read</div>
+  </div>
+</div>
+
+<div class="content-with-sidebar">
+  <article class="article-body">
+    {{ content | safe }}
+  </article>
+
+  <aside>
+    <div class="sidebar-widget">
+      <h4>🔌 Quick Pick</h4>
+      <p style="font-size:0.85rem;color:var(--muted);margin-bottom:12px;">Our top-rated home EV charger for most UK homeowners:</p>
+      <p style="font-weight:700;margin-bottom:4px;">Ohme Home Pro</p>
+      <div class="rating">★★★★★</div>
+      <p style="font-size:0.85rem;color:var(--muted);margin:8px 0 12px;">Smart, reliable, OZEV grant eligible</p>
+      <a href="/reviews/ohme-home-pro-review/" class="btn" style="display:block;text-align:center;font-size:0.85rem;padding:10px;">Read Full Review</a>
+    </div>
+
+    <div class="sidebar-widget">
+      <h4>💰 OZEV Grant</h4>
+      <p style="font-size:0.85rem;color:var(--muted);">UK homeowners can claim <strong>up to £350 off</strong> installation costs. <a href="/guides/ev-charger-government-grant-uk/">Check if you qualify →</a></p>
+    </div>
+
+    <div class="sidebar-widget">
+      <h4>📋 Popular Guides</h4>
+      <ul style="list-style:none;font-size:0.85rem;">
+        <li style="margin-bottom:8px;"><a href="/best-picks/best-home-ev-chargers-uk/">Best Home EV Chargers UK 2026</a></li>
+        <li style="margin-bottom:8px;"><a href="/guides/home-ev-charger-installation-uk/">Installation Cost Guide</a></li>
+        <li style="margin-bottom:8px;"><a href="/guides/level-1-vs-level-2-ev-charger/">Level 1 vs Level 2 Explained</a></li>
+        <li style="margin-bottom:8px;"><a href="/guides/smart-ev-charger-explained/">Smart Chargers Explained</a></li>
+      </ul>
+    </div>
+  </aside>
+</div>

@@ -1,0 +1,16 @@
+[build]
+  command = "npm run build"
+  publish = "_site"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+[[redirects]]
+  from = "/reviews"
+  to = "/reviews/"
+  status = 301
+
+[[redirects]]
+  from = "/guides"
+  to = "/guides/"
+  status = 301

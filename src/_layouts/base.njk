@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }} | Logistryx</title>
+  <meta name="description" content="{{ description or 'Expert home EV charger reviews, buying guides, and installation advice for UK homeowners.' }}">
+  <meta property="og:title" content="{{ title }} | Logistryx">
+  <meta property="og:description" content="{{ description or 'Expert home EV charger reviews, buying guides, and installation advice for UK homeowners.' }}">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://logistryx.com{{ page.url }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="/css/style.css">
+  {% block head %}{% endblock %}
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="/" class="logo">Logi<span>stryx</span></a>
+    <nav>
+      <a href="/reviews/">Reviews</a>
+      <a href="/guides/">Guides</a>
+      <a href="/best-picks/">Best Picks</a>
+      <a href="/about/">About</a>
+    </nav>
+  </div>
+</header>
+
+{% block content %}{% endblock %}
+
+<footer>
+  <div class="footer-inner">
+    <div class="affiliate-notice">
+      ⚡ <strong>Affiliate Disclosure:</strong> Logistryx is reader-supported. When you buy through links on our site, we may earn a small commission at no extra cost to you. This helps us keep the lights on and the content free.
+    </div>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="/" class="logo">Logi<span>stryx</span></a>
+        <p>Independent reviews and buying guides for home EV chargers and smart home tech. Helping UK homeowners make confident decisions since 2026.</p>
+      </div>
+      <div>
+        <h5>Reviews</h5>
+        <ul>
+          <li><a href="/reviews/">All Reviews</a></li>
+          <li><a href="/best-picks/best-home-ev-chargers-uk/">Best EV Chargers UK</a></li>
+          <li><a href="/reviews/pod-point-solo-3-review/">Pod Point Solo 3</a></li>
+          <li><a href="/reviews/ohme-home-pro-review/">Ohme Home Pro</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Guides</h5>
+        <ul>
+          <li><a href="/guides/">All Guides</a></li>
+          <li><a href="/guides/home-ev-charger-installation-uk/">Installation Guide</a></li>
+          <li><a href="/guides/ev-charger-government-grant-uk/">OZEV Grant Guide</a></li>
+          <li><a href="/guides/level-1-vs-level-2-ev-charger/">Level 1 vs Level 2</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Logistryx. All rights reserved.</span>
+      <span>
+        <a href="/privacy/">Privacy Policy</a> ·
+        <a href="/about/">About</a> ·
+        <a href="/contact/">Contact</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
