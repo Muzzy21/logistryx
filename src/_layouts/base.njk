@@ -25,6 +25,7 @@
       <a href="/guides/">Guides</a>
       <a href="/best-picks/">Best Picks</a>
       <a href="/about/">About</a>
+      <a href="/newsletter/">Newsletter</a>
     </nav>
   </div>
 </header>
@@ -65,11 +66,27 @@
       <span>
         <a href="/privacy/">Privacy Policy</a> ·
         <a href="/about/">About</a> ·
+        <a href="/newsletter/">Newsletter</a> ·
         <a href="/contact/">Contact</a>
       </span>
     </div>
   </div>
 </footer>
+
+<!-- Newsletter Sticky Footer Bar -->
+<div class="newsletter-sticky-bar" id="newsletterBar">
+  <div class="newsletter-sticky-inner">
+    <div class="sticky-text">
+      <strong>📬 Free EV Charger Buyer's Checklist</strong>
+      <span>Join our newsletter &amp; get the 2026 guide</span>
+    </div>
+    <form class="newsletter-form" action="https://embeds.beehiiv.com/PLACEHOLDER" method="POST" target="_blank">
+      <input type="email" name="email" placeholder="Your email address" required>
+      <button type="submit">Subscribe</button>
+    </form>
+    <button class="newsletter-sticky-close" onclick="document.getElementById('newsletterBar').style.display='none'" aria-label="Close">&times;</button>
+  </div>
+</div>
 
 </body>
 </html>

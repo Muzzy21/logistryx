@@ -12,6 +12,18 @@ layout: base.njk
 <div class="content-with-sidebar">
   <article class="article-body">
     {{ content | safe }}
+
+    <!-- Newsletter CTA -->
+    <div class="article-newsletter-cta">
+      <h3>📬 Get More Guides Like This</h3>
+      <p class="cta-desc">Join thousands of UK EV owners getting weekly charger tips, deals, and honest reviews.</p>
+      <p class="cta-lead-magnet">🎁 Plus, download our free <strong>2026 UK EV Charger Buyer's Checklist</strong></p>
+      <form class="newsletter-form" action="https://embeds.beehiiv.com/PLACEHOLDER" method="POST" target="_blank">
+        <input type="email" name="email" placeholder="Your email address" required>
+        <button type="submit">Subscribe Free</button>
+      </form>
+      <p class="newsletter-privacy">No spam. Unsubscribe anytime. <a href="/privacy/">Privacy policy</a>.</p>
+    </div>
   </article>
 
   <aside>
